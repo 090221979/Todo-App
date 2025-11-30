@@ -6,7 +6,7 @@ import { connectDB } from "./config/db.js"
 
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors({ origin: 'https://todo-9gmstacdp-090221979s-projects.vercel.app' }))
 
 
 mongoose.connect(process.env.MONGOOB_URI || 'mongodb://localhost:27017/todos')
