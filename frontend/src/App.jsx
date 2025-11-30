@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import './index.css'
 import axios from 'axios'
 
-const API_URL = 'http://localhost:5000/api/todos'
+const API_URL = process.env.REACT_APP_API_URL
+  //'http://localhost:5000/api/todos'
 
 function App() {
   const [todos, setTodos] = useState([])
