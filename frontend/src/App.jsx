@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './index.css'
 import axios from 'axios'
 
-const API_URL = 'https://todo-app-5m4s.onrender.com'
+const API_URL = 'https://todo-app-5m4s.onrender.com/api/todos'
   //process.env.REACT_APP_API_URL
   //'http://localhost:5000/api/todos'
 
